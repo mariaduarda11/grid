@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 95vw;
+    background-color: rgba(253, 72, 72, 0.508);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vw 70vw 15vw;
+    grid-template-areas: 
+    "m h h"
+    "m c c"
+    "m f f";
+    grid-gap: 5px 10px;
+}
+header , nav , article , footer{
+    font-size: 2rem;
+    padding: 20px;
+    border: 5px solid coral;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: rgb(254, 178, 153);
+    grid-area: h;
+}
+nav{
+    background-color: darkorange;
+    grid-area: m;
+
+
+}
+article{
+    background-color: crimson;
+  grid-area: c;
+}
+footer{
+    background-color: chocolate;
+   grid-area: f;
+}
